@@ -1,0 +1,31 @@
+<apex:page >
+    <script src="https://c.ap8.visual.force.com/soap/ajax/45.0/connection.js" type="text/javascript"></script>
+    <script>
+    function callsoql(){
+
+        sforce.connection.sessionId='{!GETSESSIONID()}';
+        var result = sforce.connection.query("Select Id, Name from Account");
+        
+        console.log(' 💥 ' + result);
+        
+        records = result.getArray("records");
+        
+        for (var i=0; i< records.length; i++) {
+            var record = records[i];
+            document.getElementById('out').innerHTML = document.getElementById('out').innerHTML + record.Id + '<br />';
+        }
+        
+	}
+    </script>
+    
+    <body>
+        
+        <input type="button" value="Save" onclick="callsoql()" class="btn"/>
+        
+        
+        <div id="out">
+            
+            
+        </div>
+    </body>
+</apex:page>

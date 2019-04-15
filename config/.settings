@@ -1,0 +1,17 @@
+{
+    "projectName": "teja_bh",
+    "username": "teja_bh@salesforcecasts.com",
+    "id": "81818a30-5f7a-11e9-a945-19ed39ecd1fb",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://ap8.salesforce.com",
+    "workspace": "/Users/KrishnaTeja/Documents",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}
